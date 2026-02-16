@@ -7,6 +7,14 @@ import cert5 from "@/assets/cert-5.jpg";
 import cert6 from "@/assets/cert-6.jpg";
 import cert7 from "@/assets/cert-7.jpg";
 import cert8 from "@/assets/cert-8.jpg";
+import cert9 from "@/assets/cert-9.jpg";
+import cert10 from "@/assets/cert-10.jpg";
+import cert11 from "@/assets/cert-11.jpg";
+import cert12 from "@/assets/cert-12.jpg";
+import cert13 from "@/assets/cert-13.jpg";
+import cert14 from "@/assets/cert-14.jpg";
+import cert15 from "@/assets/cert-15.jpg";
+import cert16 from "@/assets/cert-16.jpg";
 
 const certificates = [
   { src: cert1, alt: "Certificate 1" },
@@ -17,6 +25,14 @@ const certificates = [
   { src: cert6, alt: "Vande Mataram 150 Years Quiz Certificate" },
   { src: cert7, alt: "Har Ghar Tiranga Quiz 2024 Certificate" },
   { src: cert8, alt: "Sunbeam School Most Innovative Child Citation" },
+  { src: cert9, alt: "Senior Citizens' Welfare Awareness Quiz Certificate" },
+  { src: cert10, alt: "Cyber Security Awareness Quiz Certificate" },
+  { src: cert11, alt: "Discover Ladakh Quiz Certificate" },
+  { src: cert12, alt: "Data Privacy Awareness Quiz Certificate" },
+  { src: cert13, alt: "IRDAI BimaGyaan Insurance Awareness Quiz Certificate" },
+  { src: cert14, alt: "Swasth Dhara Toh Khet Hara 2.0 & Ken-Betwa Link Project Quiz Certificates" },
+  { src: cert15, alt: "Swasth Dhara & Ken-Betwa Link Project Quiz Certificates" },
+  { src: cert16, alt: "Unity in Diversity Quiz 2024 Certificate" },
 ];
 
 const AchievementsSection = () => {
