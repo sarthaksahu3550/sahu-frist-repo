@@ -3,12 +3,14 @@ import cert1 from "@/assets/cert-1.jpg";
 import cert2 from "@/assets/cert-2.jpg";
 import cert3 from "@/assets/cert-3.jpg";
 import cert4 from "@/assets/cert-4.jpg";
+import cert5 from "@/assets/cert-5.jpg";
 
 const certificates = [
   { src: cert1, alt: "Certificate 1" },
   { src: cert2, alt: "Certificate 2" },
   { src: cert3, alt: "Certificate 3" },
   { src: cert4, alt: "Certificate 4" },
+  { src: cert5, alt: "Rajya Lalit Kala Akademi Certificate" },
 ];
 
 const AchievementsSection = () => {
