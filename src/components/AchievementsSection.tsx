@@ -4,6 +4,8 @@ import cert2 from "@/assets/cert-2.jpg";
 import cert3 from "@/assets/cert-3.jpg";
 import cert4 from "@/assets/cert-4.jpg";
 import cert5 from "@/assets/cert-5.jpg";
+import cert6 from "@/assets/cert-6.jpg";
+import cert7 from "@/assets/cert-7.jpg";
 
 const certificates = [
   { src: cert1, alt: "Certificate 1" },
@@ -11,6 +13,8 @@ const certificates = [
   { src: cert3, alt: "Certificate 3" },
   { src: cert4, alt: "Certificate 4" },
   { src: cert5, alt: "Rajya Lalit Kala Akademi Certificate" },
+  { src: cert6, alt: "Vande Mataram 150 Years Quiz Certificate" },
+  { src: cert7, alt: "Har Ghar Tiranga Quiz 2024 Certificate" },
 ];
 
 const AchievementsSection = () => {
