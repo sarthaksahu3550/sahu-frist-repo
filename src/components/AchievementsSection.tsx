@@ -13,6 +13,15 @@ import cert11 from "@/assets/cert-11.jpg";
 import cert12 from "@/assets/cert-12.jpg";
 import cert13 from "@/assets/cert-13.jpg";
 import cert14 from "@/assets/cert-14.jpg";
+import cert15 from "@/assets/cert-15.jpg";
+import cert16 from "@/assets/cert-16.jpg";
+import cert17 from "@/assets/cert-17.jpg";
+import cert18 from "@/assets/cert-18.jpg";
+import cert19 from "@/assets/cert-19.jpg";
+import cert20 from "@/assets/cert-20.jpg";
+import cert21 from "@/assets/cert-21.jpg";
+import cert22 from "@/assets/cert-22.jpg";
+import cert23 from "@/assets/cert-23.jpg";
 
 const certificates = [
   { src: cert1, alt: "Certificate 1" },
@@ -29,6 +38,15 @@ const certificates = [
   { src: cert12, alt: "SVASTIK Quiz" },
   { src: cert13, alt: "Senior Citizens' Welfare Awareness Quiz" },
   { src: cert14, alt: "Discover Ladakh Quiz" },
+  { src: cert15, alt: "Ken-Betwa Link Project Quiz" },
+  { src: cert16, alt: "Senior Citizens' Welfare Awareness Quiz" },
+  { src: cert17, alt: "Data Privacy Awareness Quiz" },
+  { src: cert18, alt: "Energy Efficiency for Sustainable India" },
+  { src: cert19, alt: "Cyber Security Awareness Quiz" },
+  { src: cert20, alt: "Vande Mataram - 150 Years Quiz" },
+  { src: cert21, alt: "Swachh Bharat Mission Grameen Phase-II Quiz" },
+  { src: cert22, alt: "Insurance Awareness Quiz BimaGyaan" },
+  { src: cert23, alt: "India's Timeless Monuments - A Heritage Quiz" },
 ];
 
 const AchievementsSection = () => {
