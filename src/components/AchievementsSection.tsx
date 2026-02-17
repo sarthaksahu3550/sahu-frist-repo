@@ -3,12 +3,32 @@ import cert1 from "@/assets/cert-1.jpg";
 import cert2 from "@/assets/cert-2.jpg";
 import cert3 from "@/assets/cert-3.jpg";
 import cert4 from "@/assets/cert-4.jpg";
+import cert5 from "@/assets/cert-5.jpg";
+import cert6 from "@/assets/cert-6.jpg";
+import cert7 from "@/assets/cert-7.jpg";
+import cert8 from "@/assets/cert-8.png";
+import cert9 from "@/assets/cert-9.jpg";
+import cert10 from "@/assets/cert-10.jpg";
+import cert11 from "@/assets/cert-11.jpg";
+import cert12 from "@/assets/cert-12.jpg";
+import cert13 from "@/assets/cert-13.jpg";
+import cert14 from "@/assets/cert-14.jpg";
 
 const certificates = [
   { src: cert1, alt: "Certificate 1" },
   { src: cert2, alt: "Certificate 2" },
   { src: cert3, alt: "Certificate 3" },
   { src: cert4, alt: "Certificate 4" },
+  { src: cert5, alt: "Swasth Dhara Toh Khet Hara 2.0 Quiz" },
+  { src: cert6, alt: "Unity in Diversity Quiz 2024" },
+  { src: cert7, alt: "GOBARdhan Quiz" },
+  { src: cert8, alt: "Pariksha Pe Charcha 2026" },
+  { src: cert9, alt: "Dr. B.R. Ambedkar Quiz 2024" },
+  { src: cert10, alt: "Mann Ki Baat 2024 December" },
+  { src: cert11, alt: "Naturopathy Quiz 2024" },
+  { src: cert12, alt: "SVASTIK Quiz" },
+  { src: cert13, alt: "Senior Citizens' Welfare Awareness Quiz" },
+  { src: cert14, alt: "Discover Ladakh Quiz" },
 ];
 
 const AchievementsSection = () => {
@@ -40,7 +60,7 @@ const AchievementsSection = () => {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
-              transition={{ delay: i * 0.1 }}
+              transition={{ delay: (i % 4) * 0.1 }}
               className="cert-card rounded-lg overflow-hidden border border-border bg-card"
             >
               <img
