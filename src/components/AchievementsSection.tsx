@@ -22,6 +22,8 @@ import cert20 from "@/assets/cert-20.jpg";
 import cert21 from "@/assets/cert-21.jpg";
 import cert22 from "@/assets/cert-22.jpg";
 import cert23 from "@/assets/cert-23.jpg";
+import cert24 from "@/assets/cert-24.jpg";
+import cert25 from "@/assets/cert-25.jpg";
 
 const certificates = [
   { src: cert1, alt: "Certificate 1" },
@@ -47,6 +49,8 @@ const certificates = [
   { src: cert21, alt: "Swachh Bharat Mission Grameen Phase-II Quiz" },
   { src: cert22, alt: "Insurance Awareness Quiz BimaGyaan" },
   { src: cert23, alt: "India's Timeless Monuments - A Heritage Quiz" },
+  { src: cert24, alt: "VIGYANOTSAV - National Science Day Quiz 2025" },
+  { src: cert25, alt: "IKS Indology Quiz" },
 ];
 
 const AchievementsSection = () => {
