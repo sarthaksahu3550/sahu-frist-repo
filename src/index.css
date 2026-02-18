@@ -109,6 +109,35 @@
   text-shadow: 0 0 40px hsl(40 90% 55% / 0.3), 0 0 80px hsl(40 90% 55% / 0.1);
 }
 
+/* Animated ring around profile photo */
+.animated-ring {
+  background: conic-gradient(
+    hsl(160 80% 50%),
+    hsl(280 80% 55%),
+    hsl(30 90% 55%),
+    hsl(160 80% 50%)
+  );
+  animation: spin-ring 3s linear infinite;
+}
+
+@keyframes spin-ring {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+/* Loading screen gradient text */
+.loading-gradient-text {
+  background: linear-gradient(135deg, hsl(160 80% 50%), hsl(280 70% 60%), hsl(340 80% 55%));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Loading progress bar gradient */
+.loading-gradient-bar {
+  background: linear-gradient(90deg, hsl(30 90% 55%), hsl(280 70% 55%), hsl(200 80% 55%));
+}
+
 /* Subtle grid pattern */
 .grid-pattern {
   background-image:
