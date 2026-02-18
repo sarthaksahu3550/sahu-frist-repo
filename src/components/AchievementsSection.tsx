@@ -26,6 +26,8 @@ import cert24 from "@/assets/cert-24.jpg";
 import cert25 from "@/assets/cert-25.jpg";
 import cert26 from "@/assets/cert-26.jpg";
 import cert27 from "@/assets/cert-27.jpg";
+import cert28 from "@/assets/cert-28.jpg";
+import cert29 from "@/assets/cert-29.jpg";
 
 const certificates = [
   { src: cert1, alt: "Certificate 1" },
@@ -55,6 +57,8 @@ const certificates = [
   { src: cert25, alt: "IKS Indology Quiz" },
   { src: cert26, alt: "Mahakumbh 2025 Quiz" },
   { src: cert27, alt: "Drug-Free India Awareness Quiz" },
+  { src: cert28, alt: "MY Bharat Budget Quest 2026" },
+  { src: cert29, alt: "Know More About DFPD-II Quiz" },
 ];
 
 const AchievementsSection = () => {
