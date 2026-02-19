@@ -95,11 +95,11 @@
 }
 
 /* Certificate card hover */
-.cert-card {
+.cert-card, .skill-card {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.cert-card:hover {
+.cert-card:hover, .skill-card:hover {
   transform: translateY(-4px) scale(1.02);
   box-shadow: 0 20px 40px -10px hsl(40 90% 55% / 0.15);
 }
