@@ -3,6 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import AchievementsSection from "@/components/AchievementsSection";
+import SkillsSection from "@/components/SkillsSection";
 import FooterSection from "@/components/FooterSection";
 import LoadingScreen from "@/components/LoadingScreen";
 
@@ -21,6 +22,7 @@ const Index = () => {
       <main className={`min-h-screen bg-background ${loading ? "overflow-hidden h-screen" : ""}`}>
         <HeroSection />
         <AboutSection />
+        <SkillsSection />
         <AchievementsSection />
         <FooterSection />
       </main>
