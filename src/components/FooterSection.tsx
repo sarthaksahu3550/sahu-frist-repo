@@ -7,7 +7,7 @@ const links = [
 
 const FooterSection = () => {
   return (
-    <footer className="border-t border-border py-16 px-6">
+    <footer id="contact" className="border-t border-border py-16 px-6">
       <div className="max-w-3xl mx-auto text-center">
         <h3 className="font-display text-xl font-semibold text-foreground mb-6">Links</h3>
         <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
