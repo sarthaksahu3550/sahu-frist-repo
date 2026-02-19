@@ -9,7 +9,7 @@ const interests = [
 
 const AboutSection = () => {
   return (
-    <section className="py-24 px-6 grid-pattern">
+    <section id="about" className="py-24 px-6 grid-pattern">
       <div className="max-w-3xl mx-auto">
         <motion.h2
           initial={{ opacity: 0, y: 20 }}

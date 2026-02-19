@@ -6,7 +6,7 @@ import AchievementsSection from "@/components/AchievementsSection";
 import SkillsSection from "@/components/SkillsSection";
 import FooterSection from "@/components/FooterSection";
 import LoadingScreen from "@/components/LoadingScreen";
-import ThemeToggle from "@/components/ThemeToggle";
+import Navbar from "@/components/Navbar";
 
 const Index = () => {
   const [loading, setLoading] = useState(true);
@@ -20,7 +20,7 @@ const Index = () => {
       <AnimatePresence mode="wait">
         {loading && <LoadingScreen onComplete={handleLoadingComplete} />}
       </AnimatePresence>
-      {!loading && <ThemeToggle />}
+      {!loading && <Navbar />}
       <main className={`min-h-screen bg-background ${loading ? "overflow-hidden h-screen" : ""}`}>
         <HeroSection />
         <AboutSection />

@@ -5,7 +5,7 @@ const roles = ["Student", "Dreamer", "Future Engineer"];
 
 const HeroSection = () => {
   return (
-    <section className="hero-geometric relative min-h-[80vh] flex items-center justify-center">
+    <section id="home" className="hero-geometric relative min-h-[80vh] flex items-center justify-center pt-16">
       <div className="relative z-10 text-center px-6 flex flex-col items-center">
         <motion.div
           initial={{ opacity: 0, scale: 0.8 }}
