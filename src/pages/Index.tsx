@@ -7,6 +7,7 @@ import SkillsSection from "@/components/SkillsSection";
 import FooterSection from "@/components/FooterSection";
 import LoadingScreen from "@/components/LoadingScreen";
 import Navbar from "@/components/Navbar";
+import CursorEffect from "@/components/CursorEffect";
 
 const Index = () => {
   const [loading, setLoading] = useState(true);
@@ -21,6 +22,7 @@ const Index = () => {
         {loading && <LoadingScreen onComplete={handleLoadingComplete} />}
       </AnimatePresence>
       {!loading && <Navbar />}
+      {!loading && <CursorEffect />}
       <main className={`min-h-screen bg-background ${loading ? "overflow-hidden h-screen" : ""}`}>
         <HeroSection />
         <AboutSection />
