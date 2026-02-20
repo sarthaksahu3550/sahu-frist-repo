@@ -1,67 +1,21 @@
 import { motion } from "framer-motion";
-import { Monitor, Code, PenTool, Globe, BookOpen, Cpu } from "lucide-react";
 
-const skillCategories = [
-  {
-    title: "Computer Skills",
-    icon: Monitor,
-    skills: [
-      { name: "MS Word", level: 90 },
-      { name: "MS Excel", level: 80 },
-      { name: "MS PowerPoint", level: 85 },
-      { name: "Google Docs", level: 88 },
-    ],
-  },
-  {
-    title: "Web & Coding",
-    icon: Code,
-    skills: [
-      { name: "HTML & CSS", level: 75 },
-      { name: "Python", level: 60 },
-      { name: "JavaScript", level: 55 },
-      { name: "Scratch", level: 85 },
-    ],
-  },
-  {
-    title: "Creative",
-    icon: PenTool,
-    skills: [
-      { name: "Canva", level: 90 },
-      { name: "Video Editing", level: 70 },
-      { name: "Poster Design", level: 80 },
-      { name: "Presentation", level: 88 },
-    ],
-  },
-  {
-    title: "Digital Literacy",
-    icon: Globe,
-    skills: [
-      { name: "Internet Research", level: 92 },
-      { name: "Email & Communication", level: 85 },
-      { name: "Social Media", level: 80 },
-      { name: "Cyber Safety", level: 78 },
-    ],
-  },
-  {
-    title: "Academic",
-    icon: BookOpen,
-    skills: [
-      { name: "Science", level: 85 },
-      { name: "Mathematics", level: 80 },
-      { name: "English", level: 82 },
-      { name: "Hindi", level: 90 },
-    ],
-  },
-  {
-    title: "Tech & AI",
-    icon: Cpu,
-    skills: [
-      { name: "AI Tools (ChatGPT)", level: 88 },
-      { name: "Lovable / No-Code", level: 85 },
-      { name: "Typing Speed", level: 75 },
-      { name: "Quiz Platforms", level: 95 },
-    ],
-  },
+const skills = [
+  { name: "HTML", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" },
+  { name: "CSS", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" },
+  { name: "JavaScript", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" },
+  { name: "Python", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" },
+  { name: "Scratch", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scratch/scratch-original.svg" },
+  { name: "Git", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" },
+  { name: "GitHub", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" },
+  { name: "Canva", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/canva/canva-original.svg" },
+  { name: "Figma", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" },
+  { name: "Google Docs", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original.svg" },
+  { name: "MS Word", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows11/windows11-original.svg" },
+  { name: "Lovable", icon: "https://lovable.dev/icon.svg" },
+  { name: "ChatGPT", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/openai.svg" },
+  { name: "Video Editing", icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/premierepro/premierepro-original.svg" },
+  { name: "Prompt Engineering", icon: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/googlegemini.svg" },
 ];
 
 const SkillsSection = () => {
@@ -72,57 +26,31 @@ const SkillsSection = () => {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4"
+          className="text-3xl md:text-4xl font-display font-bold text-center mb-16"
         >
-          My <span className="text-primary">Skills</span>
+          <span className="text-primary">Skills</span>
         </motion.h2>
-        <motion.p
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.1 }}
-          className="text-muted-foreground mb-12 max-w-lg"
-        >
-          A snapshot of the tools and abilities I've developed as a student.
-        </motion.p>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {skillCategories.map((category, i) => (
+        <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
+          {skills.map((skill, i) => (
             <motion.div
-              key={category.title}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
+              key={skill.name}
+              initial={{ opacity: 0, scale: 0.8 }}
+              whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
-              transition={{ delay: (i % 3) * 0.1 }}
-              className="rounded-lg border border-border bg-card p-6 skill-card"
+              transition={{ delay: (i % 5) * 0.05, duration: 0.4 }}
+              whileHover={{ scale: 1.05, y: -4 }}
+              className="flex flex-col items-center justify-center gap-3 p-5 md:p-6 rounded-xl border border-border bg-card skill-card aspect-square"
             >
-              <div className="flex items-center gap-3 mb-5">
-                <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
-                  <category.icon className="w-5 h-5 text-primary" />
-                </div>
-                <h3 className="font-display font-semibold text-foreground text-lg">
-                  {category.title}
-                </h3>
-              </div>
-
-              <div className="space-y-4">
-                {category.skills.map((skill) => (
-                  <div key={skill.name}>
-                    <div className="text-sm mb-1.5">
-                      <span className="text-foreground">{skill.name}</span>
-                    </div>
-                    <div className="w-full h-2 rounded-full bg-secondary overflow-hidden">
-                      <motion.div
-                        className="h-full rounded-full bg-primary"
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${skill.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
-                      />
-                    </div>
-                  </div>
-                ))}
-              </div>
+              <img
+                src={skill.icon}
+                alt={skill.name}
+                className="w-12 h-12 md:w-16 md:h-16 object-contain"
+                loading="lazy"
+              />
+              <span className="text-foreground text-xs md:text-sm font-medium text-center leading-tight">
+                {skill.name}
+              </span>
             </motion.div>
           ))}
         </div>
