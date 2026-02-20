@@ -3,6 +3,7 @@ import { ExternalLink } from "lucide-react";
 const links = [
   { label: "MyGov Quiz", url: "https://quiz.mygov.in/" },
   { label: "Sunbeam School Mau", url: "https://sunbeamschoolmau.edu.in/" },
+  { label: "Discord", url: "https://discord.com/users/1474038953106477107" },
 ];
 
 const FooterSection = () => {
