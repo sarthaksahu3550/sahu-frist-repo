@@ -30,6 +30,16 @@ import cert28 from "@/assets/cert-28.jpg";
 import cert29 from "@/assets/cert-29.jpg";
 import cert30 from "@/assets/cert-30.png";
 import cert31 from "@/assets/cert-31.png";
+import cert32 from "@/assets/cert-32.jpg";
+import cert33 from "@/assets/cert-33.jpg";
+import cert34 from "@/assets/cert-34.jpg";
+import cert35 from "@/assets/cert-35.jpg";
+import cert36 from "@/assets/cert-36.jpg";
+import cert37 from "@/assets/cert-37.jpg";
+import cert38 from "@/assets/cert-38.jpg";
+import cert39 from "@/assets/cert-39.jpg";
+import cert40 from "@/assets/cert-40.jpg";
+import cert41 from "@/assets/cert-41.jpg";
 
 const certificates = [
   { src: cert1, alt: "Certificate 1" },
@@ -63,6 +73,16 @@ const certificates = [
   { src: cert29, alt: "Know More About DFPD-II Quiz" },
   { src: cert30, alt: "Social Media Marketing Workshop Certificate" },
   { src: cert31, alt: "Real AI Course Completion Certificate" },
+  { src: cert32, alt: "Youth Parliament - I-ACE 3.0, BHU" },
+  { src: cert33, alt: "LogIQids Mental Aptitude Olympiad 2024-25 - Zonal Rank 100" },
+  { src: cert34, alt: "Caring Souls Foundation - Cancer/AIDS Awareness Volunteer" },
+  { src: cert35, alt: "Caring Souls Foundation - Mass Awareness Campaign Participation" },
+  { src: cert36, alt: "KKSS School - Spring Camp Star Performer" },
+  { src: cert37, alt: "KKSS School - Quiz Competition 3rd Position" },
+  { src: cert38, alt: "Star Child Award - October 2024" },
+  { src: cert39, alt: "Merry Children School - Certificate of Honour, Annual Exam 2017-18" },
+  { src: cert40, alt: "Doodle with Rob - Art Completion Certificate" },
+  { src: cert41, alt: "Sunbeam School Mau - 1st Position in Living Newspaper Competition" },
 ];
 
 const AchievementsSection = () => {
