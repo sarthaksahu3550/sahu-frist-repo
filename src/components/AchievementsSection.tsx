@@ -40,6 +40,10 @@ import cert38 from "@/assets/cert-38.jpg";
 import cert39 from "@/assets/cert-39.jpg";
 import cert40 from "@/assets/cert-40.jpg";
 import cert41 from "@/assets/cert-41.jpg";
+import cert42 from "@/assets/cert-42.jpg";
+import cert43 from "@/assets/cert-43.jpg";
+import cert44 from "@/assets/cert-44.jpg";
+import cert45 from "@/assets/cert-45.jpg";
 
 const certificates = [
   { src: cert1, alt: "Certificate 1" },
@@ -83,6 +87,10 @@ const certificates = [
   { src: cert39, alt: "Merry Children School - Certificate of Honour, Annual Exam 2017-18" },
   { src: cert40, alt: "Doodle with Rob - Art Completion Certificate" },
   { src: cert41, alt: "Sunbeam School Mau - 1st Position in Living Newspaper Competition" },
+  { src: cert42, alt: "Sunbeam School Mau - Certificate of Appreciation for Annual Function Participation" },
+  { src: cert43, alt: "LogIQids Mental Aptitude Olympiad 2025-26 - Zonal Rank 58, Class 8 (Techfest IIT Bombay)" },
+  { src: cert44, alt: "Sunbeam School Mau - Most Innovative Child Award, Class VIII, 2026" },
+  { src: cert45, alt: "Rajya Lalit Kala Academy Mau - Art Workshop (Chitrakala) Participation, 2025" },
 ];
 
 const AchievementsSection = () => {
