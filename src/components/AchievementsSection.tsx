@@ -44,6 +44,8 @@ import cert42 from "@/assets/cert-42.jpg";
 import cert43 from "@/assets/cert-43.jpg";
 import cert44 from "@/assets/cert-44.jpg";
 import cert45 from "@/assets/cert-45.jpg";
+import cert46 from "@/assets/cert-46.jpg";
+import cert47 from "@/assets/cert-47.jpg";
 
 const certificates = [
   { src: cert1, alt: "Certificate 1" },
