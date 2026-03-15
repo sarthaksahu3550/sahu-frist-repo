@@ -44,6 +44,8 @@ import cert42 from "@/assets/cert-42.jpg";
 import cert43 from "@/assets/cert-43.jpg";
 import cert44 from "@/assets/cert-44.jpg";
 import cert45 from "@/assets/cert-45.jpg";
+import cert46 from "@/assets/cert-46.jpg";
+import cert47 from "@/assets/cert-47.jpg";
 
 const certificates = [
   { src: cert1, alt: "Certificate 1" },
@@ -91,6 +93,8 @@ const certificates = [
   { src: cert43, alt: "LogIQids Mental Aptitude Olympiad 2025-26 - Zonal Rank 58, Class 8 (Techfest IIT Bombay)" },
   { src: cert44, alt: "Sunbeam School Mau - Most Innovative Child Award, Class VIII, 2026" },
   { src: cert45, alt: "Rajya Lalit Kala Academy Mau - Art Workshop (Chitrakala) Participation, 2025" },
+  { src: cert46, alt: "Infinity Learn SCORE Scholarship Test - Participation Certificate, Sunbeam School Mau, Aug 2025" },
+  { src: cert47, alt: "Google Cloud - Gen AI: Beyond the Chatbot Completion Badge" },
 ];
 
 const AchievementsSection = () => {
