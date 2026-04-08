@@ -46,6 +46,9 @@ import cert44 from "@/assets/cert-44.jpg";
 import cert45 from "@/assets/cert-45.jpg";
 import cert46 from "@/assets/cert-46.jpg";
 import cert47 from "@/assets/cert-47.jpg";
+import cert48 from "@/assets/cert-48.jpg";
+import cert49 from "@/assets/cert-49.jpg";
+import cert50 from "@/assets/cert-50.png";
 
 const certificates = [
   { src: cert1, alt: "Certificate 1" },
@@ -95,6 +98,9 @@ const certificates = [
   { src: cert45, alt: "Rajya Lalit Kala Academy Mau - Art Workshop (Chitrakala) Participation, 2025" },
   { src: cert46, alt: "Infinity Learn SCORE Scholarship Test - Participation Certificate, Sunbeam School Mau, Aug 2025" },
   { src: cert47, alt: "Google Cloud - Gen AI: Beyond the Chatbot Completion Badge" },
+  { src: cert48, alt: "Sunbeam School Mau - Sports Camp Participation Certificate, Classes VI-VIII, March 2026" },
+  { src: cert49, alt: "India Gate - Perfectionist Award Certificate" },
+  { src: cert50, alt: "Physics Wallah - Timely Champ Award, Sarthak Sahu" },
 ];
 
 const AchievementsSection = () => {
