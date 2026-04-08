@@ -24,6 +24,7 @@ const Index = () => {
       </AnimatePresence>
       {!loading && <Navbar />}
       {!loading && <CursorEffect />}
+      {!loading && <BackgroundMusic />}
       <main className={`min-h-screen bg-background ${loading ? "overflow-hidden h-screen" : ""}`}>
         <HeroSection />
         <AboutSection />
