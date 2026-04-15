@@ -106,6 +106,11 @@ const certificates = [
   { src: cert48, alt: "Sunbeam School Mau - Sports Camp Participation Certificate, Classes VI-VIII, March 2026" },
   { src: cert49, alt: "India Gate - Perfectionist Award Certificate" },
   { src: cert50, alt: "Physics Wallah - Timely Champ Award, Sarthak Sahu" },
+  { src: cert51, alt: "PM Internship Quiz - Ministry of Corporate Affairs & MyGov" },
+  { src: cert52, alt: "Bharatiya Gyan Quiz on Ayurveda - IKS Division, Ministry of Education & MyGov" },
+  { src: cert53, alt: "International Day of Yoga 2026 Quiz - Ministry of AYUSH & MyGov" },
+  { src: cert54, alt: "Quiz on ASITA - A Green Asset on the Yamuna Riverfront, DDA & MyGov" },
+  { src: cert55, alt: "Quiz on 350 Years of Martyrdom of Sri Guru Tegh Bahadur Ji - Ministry of Culture & MyGov" },
 ];
 
 const AchievementsSection = () => {
