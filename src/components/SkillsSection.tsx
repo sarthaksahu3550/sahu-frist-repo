@@ -143,7 +143,12 @@ const SkillIcon = ({ skill }: { skill: { name: string; icon: string } }) => {
   );
 };
 
+const INITIAL_COUNT = 15;
+
 const SkillsSection = () => {
+  const [showAll, setShowAll] = useState(false);
+  const visibleSkills = showAll ? skills : skills.slice(0, INITIAL_COUNT);
+
   return (
     <section id="skills" className="py-24 px-6">
       <div className="max-w-5xl mx-auto">
@@ -157,7 +162,7 @@ const SkillsSection = () => {
         </motion.h2>
 
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
-          {skills.map((skill, i) => (
+          {visibleSkills.map((skill, i) => (
             <motion.div
               key={skill.name}
               initial={{ opacity: 0, scale: 0.8 }}
@@ -174,6 +179,19 @@ const SkillsSection = () => {
             </motion.div>
           ))}
         </div>
+
+        {skills.length > INITIAL_COUNT && (
+          <div className="flex justify-center mt-10">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.97 }}
+              onClick={() => setShowAll((v) => !v)}
+              className="px-6 py-3 rounded-full bg-primary text-primary-foreground font-semibold shadow-lg hover:shadow-xl transition-shadow"
+            >
+              {showAll ? "Show Less" : `View More (+${skills.length - INITIAL_COUNT})`}
+            </motion.button>
+          </div>
+        )}
       </div>
     </section>
   );
