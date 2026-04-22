@@ -54,6 +54,7 @@ import cert52 from "@/assets/cert-52.jpg";
 import cert53 from "@/assets/cert-53.jpg";
 import cert54 from "@/assets/cert-54.jpg";
 import cert55 from "@/assets/cert-55.jpg";
+import cert56 from "@/assets/cert-56.jpg";
 
 const certificates = [
   { src: cert1, alt: "Certificate 1" },
@@ -111,6 +112,7 @@ const certificates = [
   { src: cert53, alt: "International Day of Yoga 2026 Quiz - Ministry of AYUSH & MyGov" },
   { src: cert54, alt: "Quiz on ASITA - A Green Asset on the Yamuna Riverfront, DDA & MyGov" },
   { src: cert55, alt: "Quiz on 350 Years of Martyrdom of Sri Guru Tegh Bahadur Ji - Ministry of Culture & MyGov" },
+  { src: cert56, alt: "Mother Earth - Our Power Our Planet Pledge, Ministry of Earth Sciences & MyGov" },
 ];
 
 const AchievementsSection = () => {
