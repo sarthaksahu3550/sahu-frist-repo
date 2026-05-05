@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
-import { Sun, Moon } from "lucide-react";
+import { Sun, Moon, ExternalLink } from "lucide-react";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -67,17 +67,28 @@ const Navbar = () => {
           ))}
         </div>
 
-        <button
-          onClick={() => setIsDark(!isDark)}
-          className="w-10 h-10 rounded-full border border-border bg-card/80 backdrop-blur-sm flex items-center justify-center text-foreground hover:bg-card transition-colors"
-          aria-label="Toggle theme"
-        >
-          {isDark ? (
-            <Sun className="w-4 h-4 text-primary" />
-          ) : (
-            <Moon className="w-4 h-4 text-primary" />
-          )}
-        </button>
+        <div className="flex items-center gap-2">
+          <a
+            href="https://guns.lol/sarthaksahu3550"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hidden sm:inline-flex items-center gap-1.5 px-3 py-2 rounded-full text-xs font-semibold bg-primary text-primary-foreground hover:opacity-90 transition-opacity shadow-sm"
+          >
+            My Profile
+            <ExternalLink className="w-3 h-3" />
+          </a>
+          <button
+            onClick={() => setIsDark(!isDark)}
+            className="w-10 h-10 rounded-full border border-border bg-card/80 backdrop-blur-sm flex items-center justify-center text-foreground hover:bg-card transition-colors"
+            aria-label="Toggle theme"
+          >
+            {isDark ? (
+              <Sun className="w-4 h-4 text-primary" />
+            ) : (
+              <Moon className="w-4 h-4 text-primary" />
+            )}
+          </button>
+        </div>
       </div>
     </motion.nav>
   );
