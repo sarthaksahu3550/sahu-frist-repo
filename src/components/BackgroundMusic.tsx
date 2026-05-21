@@ -7,11 +7,9 @@ const BackgroundMusic = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
   useEffect(() => {
-    const audio = new Audio(
-      "https://cdn.pixabay.com/audio/2022/10/25/audio_380a83af1c.mp3"
-    );
+    const audio = new Audio("/dhurandhar.mp3");
     audio.loop = true;
-    audio.volume = 0.3;
+    audio.volume = 0.4;
     audioRef.current = audio;
 
     return () => {
