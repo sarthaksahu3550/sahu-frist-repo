@@ -8,6 +8,7 @@ import FooterSection from "@/components/FooterSection";
 import LoadingScreen from "@/components/LoadingScreen";
 import Navbar from "@/components/Navbar";
 import CursorEffect from "@/components/CursorEffect";
+import BackgroundMusic from "@/components/BackgroundMusic";
 
 
 const Index = () => {
@@ -24,6 +25,7 @@ const Index = () => {
       </AnimatePresence>
       {!loading && <Navbar />}
       {!loading && <CursorEffect />}
+      {!loading && <BackgroundMusic />}
       
       <main className={`min-h-screen bg-background ${loading ? "overflow-hidden h-screen" : ""}`}>
         <HeroSection />
