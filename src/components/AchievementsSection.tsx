@@ -61,6 +61,11 @@ import cert59 from "@/assets/cert-59.jpg";
 import cert60 from "@/assets/cert-60.jpg";
 import cert61 from "@/assets/cert-61.jpg";
 import cert62 from "@/assets/cert-62.jpg";
+import cert63 from "@/assets/cert-63.jpg";
+import cert64 from "@/assets/cert-64.jpg";
+import cert65 from "@/assets/cert-65.jpg";
+import cert66 from "@/assets/cert-66.jpg";
+import cert67 from "@/assets/cert-67.jpg";
 
 const certificates = [
   { src: cert1, alt: "Certificate 1" },
@@ -125,6 +130,11 @@ const certificates = [
   { src: cert60, alt: "Bharat Innovates: Mission Innovation Quiz - Ministry of Education & MyGov, 2026" },
   { src: cert61, alt: "BHARAT GI Quiz - Celebrate India's Heritage, DPIIT, Ministry of Commerce & MyGov" },
   { src: cert62, alt: "Commonwealth Games 2030 Quiz - SAI, Ministry of Youth Affairs and Sports & MyGov" },
+  { src: cert63, alt: "Quiz on DRDO - Securing the Nation with Indigenous Innovation, DRDO & MyGov" },
+  { src: cert64, alt: "Viksit Bharat 2026 Quiz - Vishwas ke, Vikas ke, Jan-kalyan ke, MyGov" },
+  { src: cert65, alt: "World Environment Day Quiz - Forest Department, Govt. of Madhya Pradesh & MPMyGov" },
+  { src: cert66, alt: "Quiz on Major Milestones of Modern India - Space Technology, Ministry of Defence & MyGov" },
+  { src: cert67, alt: "Genius Math Olympiad - Certificate of Participation, Infinity Learn, 2026" },
 ];
 
 const AchievementsSection = () => {
