@@ -8,9 +8,11 @@ const links = [
 
 const FooterSection = () => {
   return (
-    <footer id="contact" className="border-t border-border py-16 px-6">
-      <div className="max-w-3xl mx-auto text-center">
-        <h3 className="font-display text-xl font-semibold text-foreground mb-6">Links</h3>
+    <footer id="contact" className="relative border-t border-border py-16 px-6 overflow-hidden">
+      <div className="glow-blob w-[300px] h-[300px] bg-purple-600/10 -bottom-20 left-1/3" />
+      <div className="relative z-10 max-w-3xl mx-auto text-center">
+        <p className="text-muted-foreground text-sm tracking-[0.3em] uppercase mb-2">Contact</p>
+        <h3 className="font-display text-3xl md:text-4xl font-bold rainbow-text mb-6">Let's Connect</h3>
         <div className="flex flex-wrap items-center justify-center gap-4 mb-10">
           {links.map((link) => (
             <a

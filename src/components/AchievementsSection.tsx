@@ -139,22 +139,33 @@ const certificates = [
 
 const AchievementsSection = () => {
   return (
-    <section id="achievements" className="py-24 px-6">
-      <div className="max-w-5xl mx-auto">
+    <section id="achievements" className="relative py-24 px-6 overflow-hidden">
+      <div className="glow-blob w-[400px] h-[400px] bg-rose-500/10 top-10 left-0" />
+      <div className="glow-blob w-[400px] h-[400px] bg-purple-600/10 bottom-10 right-0" />
+      <div className="relative z-10 max-w-5xl mx-auto">
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-center text-muted-foreground text-sm tracking-[0.3em] uppercase mb-2"
+        >
+          Certificates
+        </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-display font-bold text-foreground mb-4"
+          className="text-3xl md:text-5xl font-display font-bold text-center mb-4"
         >
-          My <span className="text-primary">Achievements</span>
+          <span className="mr-3">🏆</span>
+          <span className="rainbow-text">My Achievements</span>
         </motion.h2>
         <motion.p
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ delay: 0.1 }}
-          className="text-muted-foreground mb-12 max-w-lg"
+          className="text-muted-foreground mb-12 text-center"
         >
           Certificates and recognitions I've earned through hard work and participation.
         </motion.p>
