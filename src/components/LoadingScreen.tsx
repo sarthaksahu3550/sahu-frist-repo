@@ -53,12 +53,12 @@ const LoadingScreen = ({ onComplete }: { onComplete: () => void }) => {
       </motion.div>
 
       <motion.p
-        className="text-lg md:text-xl font-display font-bold text-foreground relative z-10 mb-2"
+        className="text-2xl md:text-3xl font-display font-bold rainbow-text tracking-widest relative z-10 mb-2"
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        Sarthak Sahu
+        SARTHAK SAHU
       </motion.p>
 
       {/* Progress number */}

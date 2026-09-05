@@ -150,15 +150,25 @@ const SkillsSection = () => {
   const visibleSkills = showAll ? skills : skills.slice(0, INITIAL_COUNT);
 
   return (
-    <section id="skills" className="py-24 px-6">
-      <div className="max-w-5xl mx-auto">
+    <section id="skills" className="relative py-24 px-6 overflow-hidden">
+      <div className="glow-blob w-[400px] h-[400px] bg-emerald-500/10 top-0 right-1/4" />
+      <div className="relative z-10 max-w-5xl mx-auto">
+        <motion.p
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="text-center text-muted-foreground text-sm tracking-[0.3em] uppercase mb-2"
+        >
+          Skills
+        </motion.p>
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-display font-bold text-center mb-16"
+          className="text-3xl md:text-5xl font-display font-bold text-center mb-16"
         >
-          <span className="text-primary">Skills</span>
+          <span className="mr-3">🛠️</span>
+          <span className="rainbow-text">Tools & Skills</span>
         </motion.h2>
 
         <div className="grid grid-cols-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4 md:gap-6">
