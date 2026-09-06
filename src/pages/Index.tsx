@@ -9,6 +9,7 @@ import LoadingScreen from "@/components/LoadingScreen";
 import Navbar from "@/components/Navbar";
 import CursorEffect from "@/components/CursorEffect";
 import BackgroundMusic from "@/components/BackgroundMusic";
+import InteractiveBackground from "@/components/InteractiveBackground";
 
 
 const Index = () => {
@@ -26,8 +27,9 @@ const Index = () => {
       {!loading && <Navbar />}
       {!loading && <CursorEffect />}
       {!loading && <BackgroundMusic />}
+      <InteractiveBackground showControls={!loading} />
       
-      <main className={`min-h-screen bg-background ${loading ? "overflow-hidden h-screen" : ""}`}>
+      <main className={`relative z-10 min-h-screen bg-background/50 ${loading ? "overflow-hidden h-screen" : ""}`}>
         <HeroSection />
         <AboutSection />
         <SkillsSection />

@@ -109,28 +109,31 @@ const HeroSection = () => {
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.3 }}
-          className="text-5xl md:text-7xl font-bold font-display tracking-widest mb-6 flex flex-wrap justify-center"
+          className="text-5xl md:text-7xl font-bold font-display tracking-widest mb-6 flex flex-col md:flex-row items-center justify-center leading-none"
           aria-label="Sarthak Sahu"
         >
-          {NAME.split("").map((ch, i) =>
-            ch === " " ? (
-              <span key={i} className="w-4 md:w-6" />
-            ) : (
-              <motion.span
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.35 + i * 0.05 }}
-                className="rainbow-letter"
-                style={{
-                  ["--letter-c1" as string]: letterColors[i % letterColors.length][0],
-                  ["--letter-c2" as string]: letterColors[i % letterColors.length][1],
-                }}
-              >
-                {ch}
-              </motion.span>
-            )
-          )}
+          {NAME.split(" ").map((word, wordIndex) => (
+            <span key={word} className={wordIndex === 1 ? "md:ml-5" : ""}>
+              {word.split("").map((ch, letterIndex) => {
+                const index = wordIndex === 0 ? letterIndex : letterIndex + 7;
+                return (
+                  <motion.span
+                    key={`${word}-${letterIndex}`}
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: 0.35 + index * 0.05 }}
+                    className="rainbow-letter"
+                    style={{
+                      ["--letter-c1" as string]: letterColors[index % letterColors.length][0],
+                      ["--letter-c2" as string]: letterColors[index % letterColors.length][1],
+                    }}
+                  >
+                    {ch}
+                  </motion.span>
+                );
+              })}
+            </span>
+          ))}
         </motion.h1>
 
         {/* Typewriter */}
