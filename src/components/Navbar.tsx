@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Sun, Moon, ExternalLink } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -50,9 +51,18 @@ const Navbar = () => {
       <div className="max-w-5xl mx-auto flex items-center justify-between px-6 py-4">
         <button
           onClick={() => scrollTo("#home")}
-          className="font-display font-bold text-xl text-foreground tracking-wide"
+          className="group flex items-center gap-2 font-display font-bold text-xl text-foreground tracking-wide"
         >
-          Sarthak<span className="text-primary">.</span>
+          <img
+            src={logo}
+            alt="Sarthak Sahu logo"
+            width={1024}
+            height={1024}
+            className="w-9 h-9 object-contain drop-shadow-[0_0_10px_hsl(var(--primary)/0.6)] transition-transform duration-300 group-hover:scale-110 group-hover:rotate-6"
+          />
+          <span>
+            Sarthak<span className="text-primary">.</span>
+          </span>
         </button>
 
         <div className="hidden md:flex items-center gap-6">
